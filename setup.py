@@ -6,7 +6,7 @@ def readme():
 
 
 setup(name='flaskscaffold',
-      version='0.2',
+      version='0.3',
       description='Initializing project structure for flask applications.',
       url='https://github.com/karolosk/flask-scaffold',
       author='KarolosK',
