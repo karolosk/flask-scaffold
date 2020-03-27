@@ -9,10 +9,10 @@ setup(name='flaskscaffold',
       version='0.2',
       description='Initializing project structure for flask applications.',
       url='https://github.com/karolosk/flask-scaffold',
-      author='Flying Circus',
+      author='KarolosK',
       author_email='karolos.koutsoulelos@gmail.com',
       license='MIT',
       packages=['flaskscaffold'],
       zip_safe=False,
-      scripts=['bin/flaskscaffold-create',
-               'bin/flaskscaffold-install'])
+      include_package_data=True,
+      scripts=['bin/flaskscaffold-create'])

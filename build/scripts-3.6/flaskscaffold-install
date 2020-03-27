@@ -1,4 +1,0 @@
-#!python
-
-import flaskscaffold
-flaskscaffold.insteall_dependencies()

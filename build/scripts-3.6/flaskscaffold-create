@@ -1,4 +1,5 @@
 #!python
 
 import flaskscaffold
+
 flaskscaffold.create()
