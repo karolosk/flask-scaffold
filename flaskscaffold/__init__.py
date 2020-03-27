@@ -1,8 +1,6 @@
 import os
 from .create_scaffold import create_scaffold
 
-def test():
-    print('hello')
 
 def create():
     

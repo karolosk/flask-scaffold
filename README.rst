@@ -1,15 +1,26 @@
-# Flask Scaffold
-
+===============
+Flask Scaffold
+===============
 Package to create scaffolds for flask projects.
 
+Installing
+==========
 
-To use simply create a directory for your project and then in the directory run:
+To install the regular library without async support, just run the following command::
 
-    flaskscaffold-create
+  pip install flaskscaffold
 
+
+Usage
+=====
+
+To use simply create a directory for your project and then in the directory:
+
+  flaskscaffold-create
 
 This will create the below folder structure:
 
+::
 
     my_project
     ├── app.py
@@ -26,4 +37,4 @@ This will create the below folder structure:
     └── tests
 
 
-In addition to the file structure, boilerplate app.py and .gitignore are added.
+In addition to the file structure, boilerplate app.py and .gitignore is added.

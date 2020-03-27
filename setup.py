@@ -1,21 +1,19 @@
 from setuptools import setup
-from os import path
+import os
 
-
-this_directory = path.abspath(path.dirname(__file__))
-with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
+DIRECTORY = os.path.dirname(__file__)
+READ_ME = open(os.path.join(DIRECTORY, "README.rst")).read()
 
 
 setup(name='flaskscaffold',
-      version='0.5',
-      description='Initializing project structure for flask applications.',
+      version='0.6',
       url='https://github.com/karolosk/flask-scaffold',
       author='KarolosK',
       author_email='karolos.koutsoulelos@gmail.com',
       license='MIT',
-      long_description=long_description,
-      long_description_content_type='text/markdown',
+      description=("Initializing project structure for flask applications."),
+      long_description=READ_ME,
+      long_description_content_type="text/x-rst",
       packages=['flaskscaffold'],
       zip_safe=False,
       include_package_data=True,
