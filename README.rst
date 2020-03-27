@@ -14,7 +14,7 @@ To install the regular library without async support, just run the following com
 Usage
 =====
 
-To use simply create a directory for your project and then in the directory:
+To use simply create a directory for your project and then in the directory::
 
   flaskscaffold-create
 
