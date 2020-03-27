@@ -1,5 +1,5 @@
-Flask Scaffold
---------
+# Flask Scaffold
+
 Package to create scaffolds for flask projects.
 
 
