@@ -1,12 +1,9 @@
 from setuptools import setup
 from os import path
 
-def readme():
-    with open('README.rst') as f:
-        return f.read()
 
 this_directory = path.abspath(path.dirname(__file__))
-with open(path.join(this_directory, 'README.rst'), encoding='utf-8') as f:
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 

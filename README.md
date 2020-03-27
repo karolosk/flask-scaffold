@@ -3,14 +3,13 @@ Flask Scaffold
 Package to create scaffolds for flask projects.
 
 
-To use simply create a directory for your project and then in the directory:
+To use simply create a directory for your project and then in the directory run:
 
-    >>> flaskscaffold-create
+    flaskscaffold-create
 
 
 This will create the below folder structure:
 
-::
 
     my_project
     ├── app.py
@@ -27,4 +26,4 @@ This will create the below folder structure:
     └── tests
 
 
-In addition to the file structure, boilerplate app.py and .gitignore is added.
+In addition to the file structure, boilerplate app.py and .gitignore are added.
