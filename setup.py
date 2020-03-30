@@ -6,7 +6,7 @@ READ_ME = open(os.path.join(DIRECTORY, "README.rst")).read()
 
 
 setup(name='flaskscaffold',
-      version='0.8',
+      version='0.9',
       url='https://github.com/karolosk/flask-scaffold',
       author='KarolosK',
       author_email='karolos.koutsoulelos@gmail.com',
