@@ -17,12 +17,12 @@ def flaskscaffold():  # pragma: no cover
 
 
 @click.command()
-@click.option('--web', help='Create bootstrap with templates and static folders')
+@click.option('--web', default=False, is_flag=True, help='Create bootstrap with templates and static folders')
 def create_scaffold(web):
 
     path = os.getcwd()
     print(f'Working directory: {path}')
-
+    print(web)
     create_other_files()
     if web:
         for folder in folders:
@@ -35,7 +35,9 @@ def create_scaffold(web):
                 print(f'Created subdirectory: {folder}')
     else:
         for folder in folders:
-            if folder != 'template' or folder !='static':
+            if folder in ['templates','static']:
+                continue
+            else:
                 try:
                     os.mkdir(folder)
                     create_init_file(folder)
@@ -43,8 +45,7 @@ def create_scaffold(web):
                     print(f'Could not create subdirectory: {folder}')
                 else:
                     print(f'Created subdirectory: {folder}')
-            else:
-                continue
+                
 
 def create_init_file(foldername):
     
