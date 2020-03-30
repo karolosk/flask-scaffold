@@ -14,13 +14,18 @@ setup(name='flaskscaffold',
       description=("Initializing project structure for flask applications."),
       long_description=READ_ME,
       long_description_content_type="text/x-rst",
-      packages=['flaskscaffold'],
       zip_safe=False,
+      packages=['flaskscaffold'],
+      py_modules=['flaskscaffold'],
       include_package_data=True,
       install_requires=[
         'click'
       ],
-      scripts=['flaskscaffold'])
+      entry_points='''
+        [console_scripts]
+        flaskscaffold=flaskscaffold.flaskscaffold:create_scaffold
+      ''',
+      )
 
 
 # python3 setup.py sdist bdist_wheel
