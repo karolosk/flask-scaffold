@@ -17,4 +17,11 @@ setup(name='flaskscaffold',
       packages=['flaskscaffold'],
       zip_safe=False,
       include_package_data=True,
-      scripts=['bin/flaskscaffold-create'])
+      install_requires=[
+        'click'
+      ],
+      scripts=['flaskscaffold'])
+
+
+# python3 setup.py sdist bdist_wheel
+# twine upload dist/*^C
