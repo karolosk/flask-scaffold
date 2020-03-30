@@ -6,7 +6,7 @@ READ_ME = open(os.path.join(DIRECTORY, "README.rst")).read()
 
 
 setup(name='flaskscaffold',
-      version='0.8',
+      version='0.9',
       url='https://github.com/karolosk/flask-scaffold',
       author='KarolosK',
       author_email='karolos.koutsoulelos@gmail.com',
@@ -14,7 +14,19 @@ setup(name='flaskscaffold',
       description=("Initializing project structure for flask applications."),
       long_description=READ_ME,
       long_description_content_type="text/x-rst",
-      packages=['flaskscaffold'],
       zip_safe=False,
+      packages=['flaskscaffold'],
+      py_modules=['flaskscaffold'],
       include_package_data=True,
-      scripts=['bin/flaskscaffold-create'])
+      install_requires=[
+        'click'
+      ],
+      entry_points='''
+        [console_scripts]
+        flaskscaffold=flaskscaffold.flaskscaffold:create_scaffold
+      ''',
+      )
+
+
+# python3 setup.py sdist bdist_wheel
+# twine upload dist/*^C
